@@ -29,6 +29,7 @@ function App() {
     <div
     className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
     style={{
+        padding:10,
         backgroundImage: `url('https://images.pexels.com/photos/27244394/pexels-photo-27244394/free-photo-of-melting-glacier-on-iceland.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load')`,
     }}
 >
