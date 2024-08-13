@@ -1,6 +1,22 @@
-/*useCallback
+/*useCallback:-
  useCallback is a React Hook that lets you cache a function
  definition between re-renders.*/
+
+/*useEffect:- 
+The useEffect Hook allows you to perform side effects in your components.
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+useEffect accepts two arguments. The second argument is optional.
+useEffect(<function>, <dependency>)
+useEffect runs on every render. That means that when the count changes, a render happens, which then triggers another effect.
+This is not what we want. There are several ways to control when side effects run.
+We should always include the second parameter which accepts an array. We can optionally pass dependencies to useEffect in this array.*/
+
+/*useRef:-
+The useRef Hook allows you to persist values between renders.
+It can be used to store a mutable value that does not cause a re-render when updated.
+It can be used to access a DOM element directly.  
+*/
+
 
 import { useState, useCallback, useEffect, useRef } from "react"
 function Createing()
