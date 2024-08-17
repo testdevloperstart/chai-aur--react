@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { InputBox} from './components';
-import useCurrencyInfo from "./customHooks/useCurrancyInfo"
+import { useCurrencyInfo } from './customHooks/useCurrancyInfo';
 import { useState } from 'react';
 function App() {
   const [amount, setAmount] = useState(0)
@@ -10,9 +10,8 @@ function App() {
   const [convertedAmount, setConvertedAmount] = useState(0)
 
   const currencyinfo =useCurrencyInfo(from)
-  console.log(currencyinfo)
 
-  const options = Object.keys(currencyinfo)
+    const options = Object.keys(currencyinfo)
 
   const swap = ()=>{
     setForm(to)
